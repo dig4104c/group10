@@ -1,0 +1,145 @@
+
+@import url(reset.css);
+
+html, body{
+  height:100%;
+  width: 100%;
+
+}
+
+body {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-family: Corbel;
+}
+
+#sidebar {
+    display: none;
+    
+}
+
+#passages {
+    width: 100%;
+    float: left;
+    margin: 0px auto;
+    margin-top: 3em;
+}
+
+.body {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 2em;
+}
+
+.body img {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+#panel {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    
+}
+
+#panel #panel_nav {
+    margin-top: 3em;
+    float: left;
+    width: 100%;
+}
+
+.panel_nav_li  {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    transition: all 0.5s ease;
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.panel_nav_li:nth-child(2n+1)  {
+    background-color: lightgrey;
+}
+
+.panel_nav_li:hover{
+    background-color: black;
+    color: white;
+}
+.panel_nav_li i.icon {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: left;
+}
+.panel_nav_li i.checkbox {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+}
+
+.panel_nav_li i.checkbox:hover {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    background-color: #6b0000;
+    color: white;
+}
+.panel_nav_li i.checkbox:active {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    background-color: #222;
+    color: white;
+}
+
+#header_stripe a {
+    float: left;
+    color: black;
+    background-color: grey;
+    height: 3em;
+    width:  3em;
+    line-height: 3em;
+    text-align: center;
+    padding: 0;
+}
+#header_stripe a i {
+    font-size: 1em;
+    line-height: 3em;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#header_stripe {
+    float: left;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+}
+#image {
+    
+}
+#audio h3 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  height: 100%;
+}
+#audio button {
+  float: right;
+  position: relative;
+}
