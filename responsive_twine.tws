@@ -234,18 +234,18 @@ tp82
 Rp83
 sbsa(dp84
 g14
-I00
+I01
 sg15
 (lp85
-I321
-aI169
+I322
+aI167
 asg17
 (itiddlywiki
 Tiddler
 p86
 (dp87
 g21
-Vmacros['map'] =\u000a{\u000a	handler: function(place, object, params)\u000a	{\u000a		if(params[0] != undefined) {\u000a			state.history[0].variables["points"].push(params[0]);\u000a		}\u000a		\u000a		geo_points = state.history[0].variables["points"];\u000a        \u000a        var base_url = "https://maps.googleapis.com/maps/api/staticmap?";\u000a        var center = "Brooklyn+Bridge,New+York,NY";\u000a        var zoom = "13";\u000a        var size = "600x300";\u000a        var maptype = "roadmap";\u000a        var markers = Array ("");\u000a        var path_color = "red";\u000a        var path_weight = "10";\u000a\u000a        \u000a        var path_points = geo_points.join("|");\u000a        var markers_points = "&markers="+geo_points.join("&markers=");\u000a        \u000a        var path_params = "&path=" + "color:"+ path_color +"|weight:" + path_weight + "|" + path_points;\u000a        \u000a        var image_link = base_url + "&size=" + size + "&zoom=" + zoom + path_params + markers_points;\u000a		\u000a		\u000a\u000a		var img = document.createElement("img");\u000a		img.src= image_link;\u000a		place.appendChild(img);\u000a\u000a		//	DEBUG\u000a		//	console.log(geo_points);\u000a		//	console.log(path_points);\u000a\u000a		\u000a		\u000a	\u000a	}\u000a}
+Vmacros['map'] =\u000a{\u000a	handler: function(place, object, params)\u000a	{\u000a		if(params[0] != undefined) {\u000a			state.history[0].variables["points"].push(params[0]);\u000a		}\u000a		\u000a		geo_points = state.history[0].variables["points"];\u000a        \u000a        var base_url = "https://maps.googleapis.com/maps/api/staticmap?";\u000a        var center = "Brooklyn+Bridge,New+York,NY";\u000a        var zoom = "13";\u000a        var size = "600x300";\u000a        var maptype = "roadmap";\u000a        var markers = Array ("");\u000a        var path_color = "red";\u000a        var path_weight = "10";\u000a		var geometry_color = "#dd0d0d";\u000a		var landscape_feature = "road.local";\u000a		var local_element = "geometry";\u000a\u000a        \u000a        var path_points = geo_points.join("|");\u000a        var markers_points = "&markers="+geo_points.join("&markers=");\u000a        \u000a		var styles = "&style=feature:transit%7Ccolor:0xFF827D&style=feature:water%7Ccolor:0x7F1613&style=feature:landscape.man_made%7Celement:geometry%7Ccolor:0xCCA3A1%7Cweight:1%7Cvisibility:on&style=feature:road%7Cvisibility:off"\u000a\u000a        var path_params = "&path=" + "color:"+ path_color +"|weight:" + path_weight + "|" + path_points;\u000a        \u000a        var image_link = base_url + "&size=" + size + "&zoom=" + zoom + styles + path_params + markers_points;\u000a		\u000a		\u000a\u000a		var img = document.createElement("img");\u000a		img.src= image_link;\u000a		place.appendChild(img);\u000a\u000a		//	DEBUG\u000a		//	console.log(geo_points);\u000a		//	console.log(path_points);\u000a\u000a		\u000a		\u000a	\u000a	}\u000a}\u000a\u000amacros['jQueryRemoteLoading'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js";\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}\u000amacros['mapsApi'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = "https://maps.googleapis.com/maps/api/js?v=3.exp";\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}
 p88
 sg23
 Vmap
@@ -254,12 +254,12 @@ sg25
 g26
 ((I2014
 I11
-I6
-I17
-I36
-I47
+I20
+I2
+I7
+I59
 I3
-I310
+I324
 I0
 tp90
 (dp91
@@ -790,7 +790,7 @@ tp250
 Rp251
 sbsa(dp252
 g14
-I01
+I00
 sg15
 (lp253
 I480
