@@ -1,0 +1,256 @@
+
+@import url(reset.css);
+
+html, body{
+  height:100%;
+  width: 100%;
+
+}
+
+body {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-family: Corbel;
+}
+
+#sidebar {
+    display: none;
+    
+}
+
+#passages {
+    width: 100%;
+    float: left;
+    margin: 0px auto;
+    position: relative;
+    min-height: 50vh;
+    top: 3em;
+}
+
+.body {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 2em;
+    overflow: scroll;
+}
+
+.body img {
+    max-width: 100%;
+    margin: 0px auto;
+}
+
+
+#panel {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    
+}
+
+#panel #panel_nav {
+    margin-top: 3em;
+    float: left;
+    width: 100%;
+}
+
+.panel_nav_li  {
+    float: left;
+    width: 100%;
+    list-style-type: none;
+    transition: all 0.5s ease;
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.panel_nav_li:nth-child(2n+1)  {
+    background-color: lightgrey;
+}
+
+.panel_nav_li:hover{
+    background-color: black;
+    color: white;
+}
+.panel_nav_li i.icon {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: left;
+}
+.panel_nav_li i.checkbox {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+}
+.panel_nav_li i.fullscreen {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    color: grey;
+}
+.panel_nav_li i.fullscreen:hover {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    background-color: #762f2a;
+    color: white;
+}
+
+.panel_nav_li i.checkbox:hover {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    background-color: #6b0000;
+    color: white;
+}
+.panel_nav_li i.checkbox:active {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: right;
+    background-color: #222;
+    color: white;
+}
+
+#header_stripe a {
+    float: left;
+    color: black;
+    background-color: grey;
+    height: 3em;
+    width:  3em;
+    line-height: 3em;
+    text-align: center;
+    padding: 0;
+}
+#header_stripe a i {
+    font-size: 1em;
+    line-height: 3em;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#header_stripe {
+    float: left;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+}
+#image {
+    
+}
+#audio h3 {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+    font-size: 1.5em;
+    
+}
+#audio {
+    position: relative;
+    background-color: black;
+    color: white;
+}
+#audio button {
+  position: absolute;
+    right: 0;
+    bottom: 7%;
+    background: none;
+    border: none;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    background-color: grey;
+    color: white;
+    
+}
+#audio progress {
+    position: absolute;
+    width: 100%;
+    left:0;
+    bottom: 0;
+    background-color: grey;
+
+}
+#audio #timer {
+    position: absolute;
+    bottom: 7%;
+    line-height: 3em;
+    height: 3em;
+    text-align: center;
+    width: 4em;
+    font-family: monospace;
+
+}
+
+.image_container {
+  width: 100%;
+  text-align: center;
+}
+#image2 {
+
+}
+.body {
+  white-space: pre-wrap;
+}
+
+.body i.fa {
+  float: left;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: grey;
+  line-height: 1.5em;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+}
+.body i.fa:after {
+  content: "\000A";
+}
+.body i.fa:last-of-type {
+ /*margin-bottom: 1em;*/
+
+ 
+}
+.body_icon_wrapper {
+float: left;
+width: 100%;
+
+}
+.body_icon_wrapper:last-of-type {
+  margin-bottom: 1em;
+}
+.body_icon_wrapper + .body_icon_wrapper {
+margin-top: 1em;
+
+}
+
+#header_stripe h1 {
+  color: white;
+  line-height: 3em;
+ float: left;
+ margin-left: 1.5em;
+}
+#header_stripe {
+
+}
+
+
+
+
